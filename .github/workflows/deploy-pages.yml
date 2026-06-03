@@ -32,7 +32,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./As Travel Solutions"
+          path: "./Sp tours and Travel"
 
       - name: Deploy to GitHub Pages
         id: deployment
