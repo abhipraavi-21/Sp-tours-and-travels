@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Sp Tours and Travels logo</title>
+  <desc id="logoDesc">A black circular logo with a gold SP monogram.</desc>
+  <defs>
+    <radialGradient id="bgGradient" cx="34%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#111111" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="ringGradient" x1="18%" y1="14%" x2="82%" y2="90%">
+      <stop offset="0%" stop-color="#fff0b8" />
+      <stop offset="24%" stop-color="#f2cc60" />
+      <stop offset="54%" stop-color="#c59222" />
+      <stop offset="78%" stop-color="#f9df85" />
+      <stop offset="100%" stop-color="#a86c0c" />
+    </linearGradient>
+    <linearGradient id="letterGradient" x1="18%" y1="16%" x2="82%" y2="86%">
+      <stop offset="0%" stop-color="#fff2bc" />
+      <stop offset="25%" stop-color="#f8d86f" />
+      <stop offset="55%" stop-color="#c88d1d" />
+      <stop offset="82%" stop-color="#ffe29b" />
+      <stop offset="100%" stop-color="#a96f10" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#000000" />
+  <circle cx="256" cy="256" r="214" fill="url(#bgGradient)" stroke="url(#ringGradient)" stroke-width="7" />
+  <circle cx="256" cy="256" r="168" fill="none" stroke="#fff4c6" stroke-opacity="0.11" stroke-width="2" />
+  <text
+    x="256"
+    y="330"
+    text-anchor="middle"
+    fill="url(#letterGradient)"
+    stroke="#fff0bb"
+    stroke-width="5"
+    paint-order="stroke fill"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="194"
+    font-weight="700"
+    letter-spacing="-24"
+  >
+    SP
+  </text>
+</svg>

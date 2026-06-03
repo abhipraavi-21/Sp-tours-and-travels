@@ -24,7 +24,7 @@ const compactNavViewport = window.matchMedia('(max-width: 980px)');
 const packageDetailMediaCards = document.querySelectorAll('.package-detail-media');
 const packageDetailMediaViewport = window.matchMedia('(max-width: 720px)');
 const defaultWhatsAppMessage = [
-  'Hello A S Travel Solution,',
+  'Hello Sp Tours and Travels,',
   '',
   'I would like to enquire about your cab and tour package services.',
   'Please share the available options, pricing, and booking details.',
@@ -523,7 +523,7 @@ const buildWhatsAppUrl = (message) => {
 
 const buildProfessionalWhatsAppMessage = (intro, followUp) => {
   return [
-    'Hello A S Travel Solution,',
+    'Hello Sp Tours and Travels,',
     '',
     intro,
     followUp,
@@ -539,7 +539,7 @@ const upgradeWhatsAppMessage = (message = '') => {
     return defaultWhatsAppMessage;
   }
 
-  if (/^Hello, I want to book a cab with AS Travel Solutions\.?$/i.test(normalizedMessage)) {
+  if (/^Hello, I want to book a cab with Sp Tours and Travels\.?$/i.test(normalizedMessage)) {
     return buildProfessionalWhatsAppMessage(
       'I would like to book a cab service.',
       'Please share the available vehicle options, fare, and booking details.'
@@ -547,8 +547,8 @@ const upgradeWhatsAppMessage = (message = '') => {
   }
 
   if (
-    /^Hello, I have a cab service enquiry for AS Travel Solutions\.?$/i.test(normalizedMessage) ||
-    /^Hello, I have a service enquiry for AS Travel Solutions\.?$/i.test(normalizedMessage)
+    /^Hello, I have a cab service enquiry for Sp Tours and Travels\.?$/i.test(normalizedMessage) ||
+    /^Hello, I have a service enquiry for Sp Tours and Travels\.?$/i.test(normalizedMessage)
   ) {
     return buildProfessionalWhatsAppMessage(
       'I would like to enquire about your cab services.',
@@ -556,7 +556,7 @@ const upgradeWhatsAppMessage = (message = '') => {
     );
   }
 
-  if (/^Hello, I need a service quote from AS Travel Solutions\.?$/i.test(normalizedMessage)) {
+  if (/^Hello, I need a service quote from Sp Tours and Travels\.?$/i.test(normalizedMessage)) {
     return buildProfessionalWhatsAppMessage(
       'I would like to request a quotation for your cab services.',
       'Please share the fare, available vehicle options, and booking details.'
@@ -577,7 +577,7 @@ const upgradeWhatsAppMessage = (message = '') => {
     );
   }
 
-  if (/^Hello, I want to book a tour package with AS Travel Solutions\.?$/i.test(normalizedMessage)) {
+  if (/^Hello, I want to book a tour package with Sp Tours and Travels\.?$/i.test(normalizedMessage)) {
     return buildProfessionalWhatsAppMessage(
       'I would like to enquire about booking a tour package.',
       'Please share the available package options, pricing, and inclusions.'
@@ -724,7 +724,7 @@ whatsappFormButtons.forEach((button) => {
       })
       .filter(Boolean);
 
-    const message = ['Hello A S Travel Solution,', '', bookingIntro]
+    const message = ['Hello Sp Tours and Travels,', '', bookingIntro]
       .concat(details.length ? ['', 'Trip details:', ...details] : [])
       .concat(['', 'Please share the fare, available vehicle options, and booking details.', '', 'Thank you.'])
       .join('\n');
@@ -774,9 +774,9 @@ corporateFormButtons.forEach((button) => {
     const contactPerson = form.querySelector('#contact-person')?.value.trim();
     const subject = companyName
       ? `Corporate enquiry from ${companyName}`
-      : `Corporate enquiry from ${contactPerson || 'A S Travel Solution website visitor'}`;
+      : `Corporate enquiry from ${contactPerson || 'Sp Tours and Travels website visitor'}`;
 
-    const body = ['Hello A S Travel Solution,', '', 'I would like to discuss a corporate travel requirement.', '']
+    const body = ['Hello Sp Tours and Travels,', '', 'I would like to discuss a corporate travel requirement.', '']
       .concat(details.length ? ['Details:', ...details] : [])
       .join('\n');
 
@@ -1054,7 +1054,7 @@ if (packageDetailStacks.length) {
 
       const activeTitle = activeCard.querySelector('h2')?.textContent?.trim();
       if (activeTitle) {
-        document.title = `${activeTitle} | A S Travel Solution`;
+        document.title = `${activeTitle} | Sp Tours and Travels`;
       }
 
       if (window.location.hash.replace('#', '') !== activeCard.id) {
